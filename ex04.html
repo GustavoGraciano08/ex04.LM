@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonlight Ariana</title>
+  <style>
+    body {
+      font: 1em sans-serif;
+      background: linear-gradient(180deg, rgba(54, 0, 111, 0.9) 0%, rgb(48, 0, 93) 60%, #3e0454 100%);
+      color: #fff0fb;
+      margin: 0;
+    }
+    header {
+      margin-bottom: 24px;
+      padding: 16px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .main-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 24px;
+    }
+    .curiosidades-aside {
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      max-width: 300px;
+      min-width: 220px;
+      margin-top: 0;
+    }
+    .conteudo-central {
+      flex: 1 1 700px;
+      min-width: 320px;
+      max-width: 900px;
+    }
+    .albuns-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .albuns-grid section {
+      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      min-width: 0;
+    }
+    section {
+      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 24px;
+      min-width: 0;
+    }
+    img, video, iframe {
+      border-radius: 12px;
+      margin: 10px auto;
+      display: block;
+    }
+    @media (max-width: 1100px) {
+      .main-layout {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .curiosidades-aside {
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 900px) {
+      .albuns-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header style="text-align:center; padding:20px;">
+    <img src="Imagens/logo Ariana 2.png" alt="Logo Ariana Grande" style="width:130px; height:130px; display:block; margin:0 auto 10px;">
+    <h1 style="color:#fff; margin:0;"><i>Tudo sobre Ariana Grande:</i></h1>  
+  </header>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#biografia">Biografia</a></li>
+      <li><a href="#albuns">Álbuns</a></li>
+      <li><a href="#colabs">Colabs</a></li>
+      <li><a href="#videos">Vídeos</a></li>
+      <li><a href="tv">TV</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <!-- Layout principal com aside no topo esquerdo -->
+  <div class="main-layout">
+    <!-- ASIDE: curiosidades -->
+    <aside class="curiosidades-aside">
+      <h3>Curiosidades</h3>
+      <ul style="text-align: left;">
+        <li>Ariana é vegana desde 2013.</li>
+        <br><li>Ela tem mais de 50 tatuagens.</li>
+        <br><li>Seu alcance vocal cobre quatro oitavas.</li>
+        <br><li>Já atuou na Broadway antes da fama na TV.</li>
+        <br><li>É conhecida por seu amor por animais, especialmente cães.</li>
+        <br><li>Ariana é apaixonada por Harry Potter e já contou que sua casa tinha várias referências à saga.</li>
+        <br><li>Lançou sua própria linha de perfumes, como Ari by Ariana Grande e Cloud.</li>
+        <br><li>Após o atentado em seu show em Manchester (2017), organizou o concerto beneficente One Love Manchester, arrecadando milhões para as vítimas.</li>
+        <br><li>Ariana sempre demonstrou fascínio pela lua, o que inspirou músicas e até nomes de projetos.</li>
+
+        <br><h3>Linha do Tempo</h3>
+        <li><b>1993</b> – Nasce em 26 de junho em Boca Raton, Flórida, EUA.</li>
+        <br><li><b>2008</b> – Atua no musical da Broadway 13, interpretando Charlotte.</li>
+        <br><li><b>2010</b> – Estreia na Nickelodeon como Cat Valentine em Victorious.</li>
+        <br><li><b>2013</b> – Lança seu álbum de estreia Yours Truly, com o hit The Way (feat. Mac Miller).</li>
+        <br><li><b>2014</b> – Estoura mundialmente com o álbum My Everything, que inclui Problem, Bang Bang e Love Me Harder.</li>
+        <br><li><b>2015</b> – Inicia a The Honeymoon Tour.</li>
+        <br><li><b>2016</b> – Lança Dangerous Woman, consolidando-se como um dos maiores nomes do pop.</li>
+        <br><li><b>2017</b> – Ocorre o atentado em seu show em Manchester; Ariana organiza o concerto beneficente One Love Manchester.</li>
+        <br><li><b>2018</b> – Lança Sweetener, com os hits No Tears Left to Cry e God is a Woman.</li>
+        <br><li><b>2019</b> – Lança Thank U, Next, álbum com faixas icônicas como 7 rings e break up with your girlfriend, i’m bored.</li>
+        <br><li><b>2020</b> – Lança Positions, explorando uma sonoridade mais R&B.</li>
+        <br><li><b>2021</b> – Participa como treinadora do The Voice (EUA).</li>
+        <br><li><b>2022</b> – Lançou o Protect & Defend Trans Youth Fund, para ajudar jovens trans.</li>
+        <br><li><b>2023</b> – Anuncia participação no filme Wicked, no papel de Glinda.</li>
+        <br><li><b>2024</b> – Lança novos projetos musicais e segue atuando como empresária e ícone pop.</li>
+      </ul>
+    </aside>
+
+    <main class="conteudo-central">
+      <section id="biografia">
+        <h2>Biografia de Ariana Grande</h2>
+        <article>
+          <p>Ariana Grande-Butera, conhecida como Ariana Grande, nasceu em 26 de junho de 1993, em Boca Raton, Flórida (EUA). Desde criança mostrou talento para a música e para o teatro, participando de produções locais e da Broadway.
+            <br>Sua carreira ganhou destaque em 2009, quando interpretou Cat Valentine na série da Nickelodeon Victorious e depois em Sam & Cat. Paralelamente, investiu na música e lançou em 2013 seu álbum de estreia, "Yours Truly", que alcançou o topo da Billboard 200.
+            <br>Desde então, consolidou-se como uma das maiores artistas pop do mundo, com álbuns de sucesso como My Everything (2014), Dangerous Woman (2016), Sweetener (2018), Thank U, Next (2019) e Positions (2020). Seu estilo mistura pop, R&B e influências do soul, sendo reconhecida por sua voz poderosa e seu registro vocal de quatro oitavas.
+            <br>Além da música, Ariana também é ativista em causas sociais, defensora dos direitos das mulheres e da comunidade LGBTQIA+. É uma das artistas mais premiadas da sua geração, com Grammy Awards, Billboard Music Awards e American Music Awards.
+            Hoje, Ariana Grande é considerada um ícone da cultura pop, conhecida por sua autenticidade, versatilidade artística e enorme influência mundial.</p>
+        </article>
+        <img src="Imagens/Ariana-Grande fotoo.webp" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+      </section>
+
+      <!-- Principais Álbuns em grid 2x2 -->
+      <h2 id="albuns">Álbuns</h2>
+      <div class="albuns-grid">
+        <section>
+          <h3>Sweetener (2018)</h3>
+          <img src="Imagens/album1.jpg" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+          <p>Vencedor do Grammy, traz hits como <i>No Tears Left to Cry</i> e <i>God is a Woman</i>. Um álbum pop/R&B que explora temas de maturidade, amor e autoconhecimento, surgindo como um ato de catarse e positividade após a tragédia de Manchester. Com produção de nomes como Pharrell Williams e Max Martin, o disco incorpora influências de trap, neo soul e hip hop, apresentando um som experimental e diversificado que lhe rendeu aclamação crítica e o Grammy de Melhor Álbum Vocal Pop.</p>
+        </section>
+        <section>
+          <h3>Thank U, Next (2019)</h3>
+          <img src="Imagens/Captura de tela 2025-09-17 085759.png" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+          <p>Álbum icônico com singles de sucesso mundial como <i>7 rings</i> e <i>thank u, next</i>. Um disco de pop, R&B e trap que reflete o período turbulento da cantora, explorando temas como amor-próprio, luto pela morte do ex-namorado Mac Miller e o fim do noivado com Pete Davidson.</p>
+        </section>
+        <section>
+          <h3>Dangerous Woman (2016)</h3>
+          <img src="Imagens/Captura de tela 2025-09-17 094201.png" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+          <p>O álbum Dangerous Woman (2016) marca o amadurecimento de Ariana Grande, com uma sonoridade Pop e R&B que mistura disco, trap e eletrônica. A capa, com as orelhas de coelho, simboliza sua transição para uma feminilidade mais confiante e sensual. Nas letras, Ariana explora temas de amor, relacionamentos e autoconfiança, consolidando-se como uma artista madura e empoderada.</p>
+        </section>
+        <section>
+          <h3>Yours Truly (2013)</h3>
+          <img src="Imagens/yours truly.jpg" alt="Ariana Grande Yours Truly" style="width:320px; height:auto;">
+          <p>“Yours Truly” (2013) é o álbum de estreia de Ariana Grande, marcado por uma sonoridade inspirada no R&B dos anos 1990 com toques de pop e soul, destacando sua potência vocal comparada à de Mariah Carey. Produzido por nomes como Babyface e Harmony Samuels, o disco trouxe hits como “The Way” (com Mac Miller), “Baby I” e “Right There” (com Big Sean). Bem recebido pela crítica e pelo público, o trabalho estreou em 1º lugar na Billboard 200, consolidando Ariana como uma das maiores revelações musicais de sua geração.</p>
+        </section>
+      </div>
+
+      <section id="colabs">
+        <h2>Colaborações mais famosas</h2>
+        <article>
+          <h3>"Side to Side" (com Nicki Minaj)</h3>
+          <img src="Imagens/side to side.jpg" alt="Ariana Grande e Nicki Minaj" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Bang Bang" (com Jessie J e Nicki Minaj)</h3>
+          <img src="Imagens/Bang_Bang.png" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Save Your Tears" (com The Weeknd)</h3>
+          <img src="Imagens/save your tears2.jpg" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Stuck with U" (com Justin Bieber)</h3>
+          <img src="Imagens/Stuck with U.jpg" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+      </section>
+
+      <section id="tv">
+        <h2>Ariana na TV</h2>
+        <article>
+          <h3>"Side to Side" (com Nicki Minaj)</h3>
+          <img src="Imagens/side to side.jpg" alt="Ariana Grande e Nicki Minaj" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Bang Bang" (com Jessie J e Nicki Minaj)</h3>
+          <img src="Imagens/Bang_Bang.png" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Save Your Tears" (com The Weeknd)</h3>
+          <img src="Imagens/save your tears2.jpg" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+        <article>
+          <br><h3>"Stuck with U" (com Justin Bieber)</h3>
+          <img src="Imagens/Stuck with U.jpg" alt="Ariana Grande cantando" style="width:320px; height:auto;">
+        </article>
+      </section>
+      
+
+      <section id="videos">
+        <h2>Vídeos</h2>
+        <br><h3>A HISTÓRIA DA ARIANA GRANDE!! (@DearMaidy)</h3>
+        <!-- Vídeo local -->
+        <video controls width="400">
+    
+          <source src="Imagens/A HISTÓRIA DA ARIANA GRANDE!! 😰💥 - Dear Maidy (720p, h264, youtube).mp4" type="video/mp4">
+      
+        </video>
+        <br>
+        <!-- Vídeo do YouTube -->
+
+      <h3>Jessie J - Bang Bang ft. Ariana Grande, Nicki Minaj</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0HDdjwpPM3Y?si=hB23H3oEnRDuhr9v&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <h3> The Weeknd & Ariana Grande – Save Your Tears (Live on The 2021 iHeart Radio Music Awards)</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/s37x2VSZrLw?si=NOb0ANATx0ikoHes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <h3> Ariana Grande, Justin Bieber - Stuck with U (Official Lyric Video)</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h2jvHynuMjI?si=XKkDfSMSLKF147Ne&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    </main>
+  </div>
+
+  <footer style="text-align:center; padding:20px; background:rgba(0,0,0,0.5); margin-top:20px;">
+    <section>
+      <p>&copy; 2025 - Fã page de Ariana Grande</p>
+      <p>Siga-nos em nossas redes sociais:</p>
+      <a href="https://www.facebook.com" style="color: rgb(255, 255, 255);">Facebook</a> | 
+      <a href="https://www.twitter.com" style="color: rgb(255, 255, 255);">Twitter</a> |
+      <a href="https://www.instagram.com" style="color: rgb(255, 255, 255);">Instagram</a> 
+    </section>
+  </footer>
+
+</body>
+</html>
